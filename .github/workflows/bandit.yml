@@ -1,0 +1,18 @@
+# bandit.yaml
+targets:
+  - "."  # Scan the current directory
+exclude:
+  - "*/tests/*"
+  - "*/venv/*"
+  - "*/.venv/*"
+  - "*/.git/*"
+  - "*/__pycache__/*"
+  - "*/migrations/*"
+  - "*/alembic/*"
+severity_level: medium
+confidence_level: medium
+# If you want to include or exclude specific test IDs, use 'include' and 'exclude_tests'
+# include:
+#   - B101  # Example: Assert statements used
+# exclude_tests:
+#   - B104  # Example: Possible binding to all interfaces
